@@ -2,11 +2,9 @@ This code combines real-time hand tracking with concepts of Uniformly Accelerate
 
 == IMPORTING LIBRARIES
 
-import mediapipe as mp
-
-import cv2
-
-import matplotlib.pyplot as plt
+	import mediapipe as mp
+	import cv2
+	import matplotlib.pyplot as plt
 
 The code begins by importing three essential libraries:
 - cv2 (OpenCV) for image manipulation, video capture, and image processing.
@@ -15,14 +13,14 @@ The code begins by importing three essential libraries:
 
 == draw_graph() FUNCTION
 
-def draw_graph(x, y):
-
-    plt.clf()  
-    plt.plot(x, y, '-')  
-    plt.xlabel('Time')
-    plt.ylabel('Position')
-    plt.title('Position vs. Time')
-    plt.pause(0.001)  
+	def draw_graph(x, y)
+   
+		plt.clf()  
+    	plt.plot(x, y, '-')  
+    	plt.xlabel('Time')
+    	plt.ylabel('Position')
+    	plt.title('Position vs. Time')
+    	plt.pause(0.001)  
    
 This function is responsible for creating and updating a real-time graph. It takes two lists as input: x (time) and y (position).
 
@@ -33,10 +31,10 @@ This function is responsible for creating and updating a real-time graph. It tak
 
 == track_hand_and_car() FUNCTION
 
-def track_hand_and_car():
-    mp_drawing = mp.solutions.drawing_utils
-    mp_hands = mp.solutions.hands
-
+	def track_hand_and_car():
+    	mp_drawing = mp.solutions.drawing_utils
+    	mp_hands = mp.solutions.hands
+	
     cap = cv2.VideoCapture(0)  # Initialize the camera
     
     # ... Loading images of the car and track ...
