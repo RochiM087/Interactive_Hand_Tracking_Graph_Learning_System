@@ -1,6 +1,7 @@
 This code combines real-time hand tracking with concepts of Uniformly Accelerated Linear Motion.
 
 == IMPORTING LIBRARIES
+
 import cv2
 import mediapipe as mp
 import matplotlib.pyplot as plt
@@ -13,12 +14,13 @@ The code begins by importing three essential libraries:
 == draw_graph() FUNCTION
 
 def draw_graph(x, y):
-    plt.clf()  # Clear the previous graph
-    plt.plot(x, y, '-')  # Plot the x and y points as lines
+
+    plt.clf()  
+    plt.plot(x, y, '-')  
     plt.xlabel('Time')
     plt.ylabel('Position')
     plt.title('Position vs. Time')
-    plt.pause(0.001)  # Pause to update the graph
+    plt.pause(0.001)  
    
 This function is responsible for creating and updating a real-time graph. It takes two lists as input: x (time) and y (position).
 
