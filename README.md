@@ -13,7 +13,7 @@ The code begins by importing three essential libraries:
 
 == draw_graph() FUNCTION
 
-	def draw_graph(x, y)
+	def draw_graph(x, y):
    
 		plt.clf()  
     	plt.plot(x, y, '-')  
