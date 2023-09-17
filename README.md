@@ -2,8 +2,10 @@ This code combines real-time hand tracking with concepts of Uniformly Accelerate
 
 == IMPORTING LIBRARIES
 
-import cv2
 import mediapipe as mp
+
+import cv2
+
 import matplotlib.pyplot as plt
 
 The code begins by importing three essential libraries:
