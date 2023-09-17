@@ -11,6 +11,7 @@ The code begins by importing three essential libraries:
 - matplotlib.pyplot for creating and updating real-time graphs.
 
 == draw_graph() FUNCTION
+
 def draw_graph(x, y):
     plt.clf()  # Clear the previous graph
     plt.plot(x, y, '-')  # Plot the x and y points as lines
