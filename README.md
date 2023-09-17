@@ -31,7 +31,6 @@ This function is responsible for creating and updating a real-time graph. It tak
 
 == track_hand_and_car() FUNCTION
 
-	def track_hand_and_car():
 	    mp_drawing = mp.solutions.drawing_utils
 	   	mp_hands = mp.solutions.hands
 	
